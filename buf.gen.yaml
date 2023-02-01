@@ -1,0 +1,26 @@
+#!/usr/bin/env -S buf generate --template
+---
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: github.com/openfga/api/proto
+    except:
+      - buf.build/googleapis/googleapis
+      - buf.build/envoyproxy/protoc-gen-validate
+      - buf.build/grpc-ecosystem/grpc-gateway
+
+plugins:
+  - remote: buf.build/protocolbuffers/plugins/dart
+    out: proto/
+    opt:
+      - paths=source_relative
+  - remote: buf.build/grpc/plugins/dart
+    out: proto/
+    opt:
+      - paths=source_relative
+  #- remote: buf.build/jirkad/plugins/protoc-gen-validate:v0.6.7
+  #  out: proto/
+  #  opt:
+  #    - paths=source_relative
+  #    - lang=go

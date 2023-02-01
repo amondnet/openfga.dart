@@ -1,0 +1,10 @@
+[submodule "openfga-api"]
+	path = openfga/api
+	url = https://github.com/openfga/api.git
+[submodule "protobuf"]
+	path = protocolbuffers/protobuf
+	url = https://github.com/protocolbuffers/protobuf.git
+[submodule "googleapis"]
+	path = googleapis/googleapis
+	url = https://github.com/googleapis/googleapis.git
+
