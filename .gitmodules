@@ -1,10 +1,16 @@
-[submodule "openfga-api"]
-	path = openfga/api
-	url = https://github.com/openfga/api.git
 [submodule "protobuf"]
-	path = protocolbuffers/protobuf
+	path = protobuf
 	url = https://github.com/protocolbuffers/protobuf.git
 [submodule "googleapis"]
-	path = googleapis/googleapis
+	path = googleapis
 	url = https://github.com/googleapis/googleapis.git
 
+[submodule "api"]
+	path = api
+	url = https://github.com/openfga/api.git
+[submodule "protoc-gen-validate"]
+	path = protoc-gen-validate
+	url = https://github.com/bufbuild/protoc-gen-validate.git
+[submodule "grpc-gateway"]
+	path = grpc-gateway
+	url = https://github.com/grpc-ecosystem/grpc-gateway
